@@ -136,7 +136,7 @@
 //
 
 
-@button-color-list: "brand", "action", "warning", "critical", "positive", "negative", "neutral-light", "neutral", "neutral-dim", "neutral-dark", "dark", "light", "white", "item", "backdrop", "item-alt", "backdrop-alt";
+@button-color-list: "brand", "action", "warning", "critical", "positive", "negative", "neutral-tint", "neutral-light", "neutral", "neutral-dim", "neutral-dark", "dark", "light", "white", "item", "backdrop", "item-alt", "backdrop-alt";
 @button-color-list-lenght: length(@button-color-list);
 
 
@@ -286,6 +286,12 @@
 
 [btn~="clip"] {
   color: inherit;
+}
+
+[btn~="material"] {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 [btn] {
