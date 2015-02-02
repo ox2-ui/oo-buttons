@@ -240,6 +240,11 @@
     border-color: @@value;
     background-color: @@value;
   }
+
+  // Button text colors
+  [btn~="text:@{value}"] {
+    color: @@value !important;
+  }
 }
 
 // Call create
@@ -406,6 +411,7 @@
     height: 100%;
   }
 }
+
 
 //
 //      Shapes
