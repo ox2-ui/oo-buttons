@@ -537,6 +537,37 @@
   box-sizing: border-box;
 }
 
+[btn~="is-positioned"] {
+  position: absolute;
+}
+
+[btn~="draggable"] {
+  cursor: grab;
+
+  &.is-dragging {
+    cursor: grabbing;
+  }
+}
+
+[btn] {
+
+  &.is-selected {
+    &::before {
+      content: "";
+      border: 2px dashed @neutral;
+      position: absolute;
+      left: -5px;
+      bottom: -5px;
+      right: -5px;
+      top: -5px;
+      border-radius: 50%;
+    }
+  }
+
+}
+
+
+
 [btn~="block-h"] {
   // width: 100%; XXX messes up aligment when ading padding do not set
   flex: 1;
