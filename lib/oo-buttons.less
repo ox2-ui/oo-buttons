@@ -566,7 +566,24 @@
 
 }
 
+// outlined button hack for not being 100% width in list
+[btn~="border-box"] {
+  box-sizing: border-box;
+}
+// same hack for outlined, rethink the API
+[btn~="h-initial"] {
+  height: initial;
+}
 
+// XX temp hack
+[btn~="block-item"] {
+  display: block;
+}
+
+// XX temp hack
+[btn~="full-width"] {
+  width: 100%;
+}
 
 [btn~="block-h"] {
   // width: 100%; XXX messes up aligment when ading padding do not set
@@ -597,4 +614,21 @@
 
 [tabs~="center"] {
   justify-content: center;
+}
+
+[btn] {
+
+  .dot {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+
+
+[btn~="has-positioning"] {
+  position: relative;
 }
