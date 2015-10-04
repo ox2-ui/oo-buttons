@@ -1,5 +1,1 @@
-### Buttons of various shapes and sizes
-
-``` jade
-  button(btn="action small") Action!
-```
+### DO NOT USE for testing purposes ONLY
