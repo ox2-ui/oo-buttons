@@ -19,12 +19,9 @@ Package.onUse(function(api) {
   // 3rd party
   api.use([
     'lauricio:less-autoprefixer@2.5.0_3',
-<<<<<<< HEAD
-    'ox2:colors@1.2.0',
-    'ox2:inject-style@1.0.0'
-=======
+    'ox2:inject-style@1.0.0',
     'ox2:colors@1.2.0'
->>>>>>> master
+
     ]);
   api.addFiles('lib/oo-buttons.less', C);
   api.addFiles('lib/oo-buttons-theming.js', C);
