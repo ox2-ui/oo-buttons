@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ox2:buttons',
   summary: 'TESTING_DO_NOT_USE Button styles',
-  version: '1.2.1',
+  version: '1.3.0',
   git: ' /* Fill me in! */ '
 });
 
@@ -21,7 +21,6 @@ Package.onUse(function(api) {
     'lauricio:less-autoprefixer@2.5.0_3',
     'ox2:inject-style@1.0.0',
     'ox2:colors@1.2.0'
-
     ]);
   api.addFiles('lib/oo-buttons.less', C);
   api.addFiles('lib/oo-buttons-theming.js', C);
