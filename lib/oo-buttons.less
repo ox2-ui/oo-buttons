@@ -650,3 +650,22 @@
   border-width: 1px;
 }
 
+// Unread Badge
+// XXX Make configurable
+[btn] {
+
+  oo-button-badge {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0.2em;
+    right: 1.4em;
+    line-height: .8em;
+    border-radius: 1em;
+    padding: .4em .55em;
+    font-weight: bold;
+
+    &:empty {
+      display: none;
+    }
+  }
+}
