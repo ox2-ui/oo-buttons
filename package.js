@@ -19,15 +19,18 @@ Package.onUse(function(api) {
   // Core
   api.use([
     'ecmascript',
-    'session'
+    'session',
+    'templating'
     ]);
   // 3rd party
   api.use([
     'lauricio:less-autoprefixer@2.5.0_3',
+    'mquandalle:jade@0.4.1',
     'ox2:inject-style@1.0.0',
     'ox2:colors@1.2.0'
     ]);
   api.addFiles('lib/oo-buttons.less', C);
+  api.addFiles('lib/oo-buttons.jade', C);
   api.addFiles('lib/oo-buttons-theming.js', C);
 
 });
