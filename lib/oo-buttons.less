@@ -214,6 +214,12 @@
         color: inherit;
         cursor: default;
     }
+
+    &[is-active] {
+        background-color: @@value;
+        color: white;
+        cursor: default;
+    }
   }
 
   [btn~="@{value}"][btn~="transparent"] {
